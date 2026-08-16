@@ -1,0 +1,19 @@
+# Python environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Secrets and environment configurations
+.env
+
+# Application temporary generated files
+*.mp3
+Temp.mp3
+
+# IDE settings
+.vscode/
+.idea/
+.DS_Store
