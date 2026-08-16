@@ -1,6 +1,6 @@
 # 🛒 ShopWhisper AI
 
-**ShopWhisper AI** is a voice-enabled conversational e-commerce assistant. Built using Python, OpenAI's Chat Completions API, local speech transcription via OpenAI Whisper, and Text-to-Speech (gTTS) integrated with Gradio, it allows users to interact with product catalogs using natural speech or text.
+**ShopWhisper AI** is an enterprise-grade, voice-enabled conversational shopping assistant built with Python, Gradio, OpenAI's Chat Completions API (`gpt-3.5-turbo` / `gpt-4o`), local speech recognition via OpenAI Whisper, and Text-to-Speech synthesis using `gTTS`.
 
 ---
 
@@ -20,17 +20,3 @@
 | +----------------------------------------------------------------+ | +--------------------------------+ |
 | | [ Ask about specs, pricing, or recommendations... ]  [ Send ]  | | | [ 🔊 Audio Player: Output.mp3] | |
 +--------------------------------------------------------------------+------------------------------------+
-
-
-[ User Speech Input ] ──> [ Audio Recorder ] ──> [ OpenAI Whisper (Local STT) ]
-                                                              │
-                                                              ▼
-[ Audio Output ] <─────── [ gTTS Engine ] <─────── [ OpenAI Chat API ]
-
-
-shopwhisper-ai/
-├── app.py                # Main application code (Gradio UI & API backend)
-├── requirements.txt      # Python package dependencies
-├── .env.example          # Environment variables template
-├── .gitignore            # Excludes secrets and temporary audio files
-└── README.md             # Project documentation
